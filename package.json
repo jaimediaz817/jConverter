@@ -1,0 +1,30 @@
+{
+  "name": "jconverter",
+  "version": "0.1.0",
+  "description": "Función genérica tipo IIFE que provee servicios básicos para conversión de medidas de peso.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaimediaz817/jConverter.git"
+  },
+  "keywords": [
+    "convertidor",
+    "peso",
+    "unidades",
+    "medidas",
+    "conversor",
+    "transformar"
+  ],
+  "author": "= <=> (=)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaimediaz817/jConverter/issues"
+  },
+  "homepage": "https://github.com/jaimediaz817/jConverter#readme"
+}
