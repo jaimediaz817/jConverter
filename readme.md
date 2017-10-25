@@ -11,7 +11,7 @@ JConverter es un módulo con servicios para calcular medidas de peso basado en e
 
 ## Instalación
 ```
-npm install jConverter
+npm install jconverter
 ```
 
 ## Métodos que incorpora
@@ -31,14 +31,14 @@ getObjDestino: sin parametros, retorna todo el objeto destino
 
 ## Uso
 ```
-import jConverter from 'jConverter'
+import jconverter from 'jconverter'
 
 // solo inicializa el modulo con unos datos por defecto para no generar error.
-let inicio = jConverter(); // inicializa el módulo
+let inicio = jconverter(); // inicializa el módulo
 inicio.iniciar() // crea valores por defecto.
 
 // se crea un array de JSON donde cada objeto representa una unidad de medida.
-let datos = jConverter.getMedidas() // obtiene todas las unidades de medida configuradas.
+let datos = jconverter.getMedidas() // obtiene todas las unidades de medida configuradas.
 
 // se calcula el resultado a partir del objeto creado, indicando la unidad origen y destino a convertir seguido del valor.
 let resultadoA = inicio.calcularMedidas('lb','kg', 188)
