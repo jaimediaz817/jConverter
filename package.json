@@ -2,12 +2,12 @@
   "name": "jconverter",
   "version": "0.1.0",
   "description": "Función genérica tipo IIFE que provee servicios básicos para conversión de medidas de peso.",
-  "main": "index.js",
+  "main": "dist/src/jconverter.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-
+    "build": "babel src/jconverter.js -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
     "transformar"
   ],
   "author": "= <=> (=)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
 }
