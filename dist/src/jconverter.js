@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.jconverter = jconverter;
+exports.default = jconverter;
 // EXPORTANDO
 
 function jconverter() {
