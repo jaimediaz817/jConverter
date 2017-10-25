@@ -1,6 +1,6 @@
 // EXPORTANDO
 
-export function jconverter(){
+export default function jconverter(){
 	//var jConverter = function(){
 	//var jConverter = function(uMedidaOrigen = 'kl', uMedudaDestino = 'lb', valor = 0) {	  
 	  // variables de instancia
