@@ -10,8 +10,9 @@ JConverter es un módulo con servicios para calcular medidas de peso basado en e
 -	Unidad Destino: corresponde al parametro número 1 según el orden. ('...', 'lb')
 
 ## Instalación
+- Ejecutar el siguiente comando:
 ```
-npm install jconverter
+- npm install jconvertidor
 ```
 
 ## Métodos que incorpora
@@ -31,7 +32,7 @@ getObjDestino: sin parametros, retorna todo el objeto destino
 
 ## Uso
 ```
-import jconverter from 'jconverter'
+import jconverter from 'jconvertidor'
 
 // solo inicializa el modulo con unos datos por defecto para no generar error.
 let inicio = jconverter(); // inicializa el módulo
