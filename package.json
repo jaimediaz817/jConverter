@@ -22,7 +22,7 @@
     "conversor",
     "transformar"
   ],
-  "author": "= <=> (=)",
+  "author": "Jaime Diaz <jdsolutions817@gmail.com> (https://sites.google.com/view/memodevs/)",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
