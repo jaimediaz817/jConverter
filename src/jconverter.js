@@ -1,10 +1,11 @@
 // EXPORTANDO
 
 export default function jconverter(){
-    // Historial de la firma del método o función principal:
-	//var jConverter = function(){
-	//var jConverter = function(uMedidaOrigen = 'kl', uMedudaDestino = 'lb', valor = 0) {	  
-    // variables de instancia
+// Historial de la firma del método o función principal:
+//function jconverter(){
+//var jConverter = function(){
+//var jConverter = function(uMedidaOrigen = 'kl', uMedudaDestino = 'lb', valor = 0) {	  
+// variables de instancia
     let uMedidaOrigen = 'kg'
     let uMedudaDestino = 'lb'
     let valor = 0
@@ -17,7 +18,6 @@ export default function jconverter(){
     let destino = uMedudaDestino
     let val = valor
     let array=[]
-    console.log(origen+destino+" <== unidades IN")	  
     //Getters and Setters...
     var setOrigen = function(origenIn){
         origen = origenIn
@@ -85,7 +85,7 @@ export default function jconverter(){
         // 2 #  ORDENAR: medidas PENDIENTE VALIDAR: si valor != entonces ordene
         var orden = _ordenarUnidadesIniciales(med)
         setOrden(orden)				  
-        console.log("origen: " + orden[0].origen + " , destino: " + orden[0].destino + "  datos Unidad 1 : " + JSON.stringify(orden[1])+" datos unidad 2: "+JSON.stringify(orden[1])+" => INICIALIZADOR")		
+        //console.log("origen: " + orden[0].origen + " , destino: " + orden[0].destino + "  datos Unidad 1 : " + JSON.stringify(orden[1])+" datos unidad 2: "+JSON.stringify(orden[1])+" => INICIALIZADOR")		
         // 3 #  Procesar / ejecutar formula => Salida
         var resultado = 0
         return resultado;
@@ -105,7 +105,7 @@ export default function jconverter(){
         var flag2=false		
 
         medidas.forEach(function(currentItem, index, arr) {
-            console.log("print"+JSON.stringify(currentItem))
+            //console.log("print"+JSON.stringify(currentItem))
             // validando medidas
             if (origen == currentItem.unidad) {
             ordenRetornado.origen = currentItem.orden

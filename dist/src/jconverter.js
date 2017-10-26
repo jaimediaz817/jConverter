@@ -180,3 +180,10 @@ function jconverter() {
         getObjDestino: getObjetoDestino
     };
 }
+
+/*
+var obj = jconverter();
+var resultado = obj.iniciar()
+let res = obj.calcularMedidas('lb','kg', 188)
+console.log("---> ---> ---> --->"+resultado+" , res2: "+res)
+*/
