@@ -8,6 +8,7 @@ exports.default = jconverter;
 
 function jconverter() {
     // Historial de la firma del método o función principal:
+    //function jconverter(){
     //var jConverter = function(){
     //var jConverter = function(uMedidaOrigen = 'kl', uMedudaDestino = 'lb', valor = 0) {	  
     // variables de instancia
@@ -23,7 +24,6 @@ function jconverter() {
     var destino = uMedudaDestino;
     var val = valor;
     var array = [];
-    console.log(origen + destino + " <== unidades IN");
     //Getters and Setters...
     var setOrigen = function setOrigen(origenIn) {
         origen = origenIn;
@@ -91,14 +91,14 @@ function jconverter() {
         // 2 #  ORDENAR: medidas PENDIENTE VALIDAR: si valor != entonces ordene
         var orden = _ordenarUnidadesIniciales(med);
         setOrden(orden);
-        console.log("origen: " + orden[0].origen + " , destino: " + orden[0].destino + "  datos Unidad 1 : " + JSON.stringify(orden[1]) + " datos unidad 2: " + JSON.stringify(orden[1]) + " => INICIALIZADOR");
+        //console.log("origen: " + orden[0].origen + " , destino: " + orden[0].destino + "  datos Unidad 1 : " + JSON.stringify(orden[1])+" datos unidad 2: "+JSON.stringify(orden[1])+" => INICIALIZADOR")		
         // 3 #  Procesar / ejecutar formula => Salida
         var resultado = 0;
         return resultado;
     };
     //--------------------------------------------------------------------------
     var _ordenarUnidadesIniciales = function _ordenarUnidadesIniciales(medidas) {
-        console.log("_ordenarUnidadesIniciales:" + origen + ", destino: " + destino + ", medidas: " + medidas);
+        //console.log("_ordenarUnidadesIniciales:"+origen+", destino: "+destino+", medidas: "+medidas)
         // retorno parte I
         var ordenRetornado = {
             origen: 0,
@@ -111,7 +111,7 @@ function jconverter() {
         var flag2 = false;
 
         medidas.forEach(function (currentItem, index, arr) {
-            console.log("print" + JSON.stringify(currentItem));
+            //console.log("print"+JSON.stringify(currentItem))
             // validando medidas
             if (origen == currentItem.unidad) {
                 ordenRetornado.origen = currentItem.orden;
@@ -181,9 +181,3 @@ function jconverter() {
     };
 }
 
-/*
-var obj = jconverter();
-var resultado = obj.iniciar()
-let res = obj.calcularMedidas('lb','kg', 188)
-console.log("---> ---> ---> --->"+resultado+" , res2: "+res)
-*/

@@ -92,7 +92,7 @@ export default function jconverter(){
     }	    
     //--------------------------------------------------------------------------
     var _ordenarUnidadesIniciales = function(medidas) {
-        console.log("_ordenarUnidadesIniciales:"+origen+", destino: "+destino+", medidas: "+medidas)
+        //console.log("_ordenarUnidadesIniciales:"+origen+", destino: "+destino+", medidas: "+medidas)
         // retorno parte I
         var ordenRetornado = {
             origen: 0,
