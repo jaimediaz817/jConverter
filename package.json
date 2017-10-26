@@ -1,5 +1,5 @@
 {
-  "name": "jconverter",
+  "name": "jconvertidor",
   "version": "0.1.0",
   "description": "Función genérica tipo IIFE que provee servicios básicos para conversión de medidas de peso.",
   "main": "dist/src/jconverter.js",
