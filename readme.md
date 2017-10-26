@@ -12,14 +12,18 @@ JConverter es un módulo con servicios para calcular medidas de peso basado en e
 ## Instalación
 - Ejecutar el siguiente comando:
 ```
-- npm install jconvertidor
+npm install jconvertidor
 ```
+- Posteriormente, hay que verificar si se descargó algún directorio
+cuyo nombre es "jconvertidor".
+
 
 ## Métodos que incorpora
 ```
-- Actualmente la función cuenta con algunos servicios básicos para desplegar una vista agradable y sencilla al cliente
+- Actualmente la función cuenta con algunos servicios básicos.
+- Es posible llevarla a un cliente web en tan solo minutos.
 - Estos servicios se exponen desde el retorno de función, y a su vez realiza el llamado a miembros propios (funciones con otro nombre interno)
-para así lograr un desacople de responsabilidades y 100% modular.
+-Busca lograr un desacople de responsabilidades y 100% modular.
 ```
 
 ```
@@ -52,6 +56,17 @@ let medidasCatch = JSON.stringify(datos)
 console.log("validación de unidades básico: "+(resultadoA==resultadoB))
 ```
 
+## Propuesta a la comunidad y compañeros de estudio.
+# implementación de otras medidas de peso
+- Actualmente el módulo tiene habilitado la conversión de Kg a Lb y viceverza.
+- Se propone a quien quiera hacer parte de este repositorio a realizar sus pull request respectivos para evaluar la mejor manera, ello para fines didácticos y prácticas en entornos laborales reales.
+```
+En total son 4 unidades de medida que contemplará el módulo JS.
+Pendiente pasar de Toneladas a todas las medidas (4)
+Pendiente pasar de Kilos a las demás medidas distintas de libras (3)
+Pendiente pasar de Libras a las demás medidas distintas de Kilos (3)
+Pendiente pasar de Gramos a todas las demás medidas (4)
+```
 ## Créditos
 - [Twitter Jaime Diaz](https://twitter.com/jdiaz0017)
 - [Sitio en google de Jaime Diaz](https://sites.google.com/view/memodevs/)
