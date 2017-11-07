@@ -55,27 +55,6 @@ console.log("resultado A: "+resultadoA+" , resultado B: "+ resultadoB)
 
 ```
 
------------------------------------------------
-import jconverter from 'jconvertidor'
-
-// solo inicializa el modulo con unos datos por defecto para no generar error.
-let inicio = jconverter(); // inicializa el módulo
-inicio.iniciar() // crea valores por defecto.
-
-// se crea un array de JSON donde cada objeto representa una unidad de medida.
-let datos = jconverter.getMedidas() // obtiene todas las unidades de medida configuradas.
-
-// se calcula el resultado a partir del objeto creado, indicando la unidad origen y destino a convertir seguido del valor.
-let resultadoA = inicio.calcularMedidas('lb','kg', 188)
-let resultadoB = inicio.calcularMedidas('kg','lb', 94)
-
-// obtiene las medidas en formato JSON
-let medidasCatch = JSON.stringify(datos)
-
-// unidades validadas
-console.log("validación de unidades básico: "+(resultadoA==resultadoB))
-```
-
 ## Propuesta a la comunidad y compañeros de estudio.
 # implementación de otras medidas de peso
 - Actualmente el módulo tiene habilitado la conversión de Kg a Lb y viceverza.
