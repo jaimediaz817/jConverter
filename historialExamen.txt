@@ -1,0 +1,50 @@
+-  C O D E  JS - 
+let p2 = ["a", "b", "c", "d"];
+let res = 1;
+if(p2){
+	res++
+}
+if(p2.length){
+	res++
+}
+if (p2[1] == "a"){
+	res++
+	
+}else if(p2[2] == "b"){
+	res+=2
+}else{
+	res--
+}
+console.log("res: "+res)
+
+
+
+
+console.log(1)
+setTimeout(() => console.log(2), 0)
+console.log(3)
+setTimeout(() => console.log(4), 0)
+
+
+
+
+
+
+class Persona{
+	constructor(nombre, amigos = []){
+		this.nombre = nombre
+		this.amigos = amigos
+    }
+
+    listarAmigos(){
+        this.amigos.forEach(function(){
+            console.log(`mi nombre: ${this.nombre} y soy amigo de:{$amigo}`)
+        })
+    }
+}
+
+
+
+
+
+
