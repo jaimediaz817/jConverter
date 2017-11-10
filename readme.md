@@ -5,9 +5,10 @@ JConverter es un módulo con servicios para calcular medidas de peso basado en e
 ## Descripción del mecanismo de conversión JConverter
 -	Como paso inicial se crea una instancia del modulo sin parámetros de entrada y tendrá como retorno el numero cero 0.
 -   Cada unidad de medida en el contexto de la aplicación tendrá solo 2 caracteres, es decir: 'tl' para representar toneladas, 'kg' para representar Kilogramos, 'lb' para representar Libras y 'mg' para representar finalmente miligramos.
--	Una vez creado el objeto, se procede a ingresar los parámetros siguiendo un orden específico que define los parámetros de conversión, seguido de un valor numérico como tercer parámetro, es decir, si quiero convertir de Kilos a Libras el orden ideal sería:  'kg', 'lb' para los dos primeros parametros de entrada, y un valor entero numérico como tercer y último parámetro.
+-	Una vez creado el objeto, se procede a ingresar los parámetros siguiendo un orden específico que define los parámetros de conversión, seguido de un valor numérico como tercer parámetro, es decir, si quiero convertir el numero "94" de Kilos a Libras, el orden correcto es: 'kg', 'lb', 94.
+-  Los 2 primeros argumentos correspoden a las unidades origen/destino, y la última es el valor numérico a convertir.
 -	Unidad origen: corresponde al parametro número 1 según el orden del parámetro. ('kg', '...', ...)
--	Unidad Destino: corresponde al parametro número 1 según el orden del parámetro. ('...', 'lb', ...)
+-	Unidad Destino: corresponde al parametro número 2 según el orden del parámetro. ('...', 'lb', ...)
 
 ## Instalación
 - Ejecutar el siguiente comando:
